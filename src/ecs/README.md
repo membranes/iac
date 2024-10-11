@@ -5,7 +5,8 @@
 ### Cluster
 
 > [!TIP]
-> aws ecs [{command}](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/index.html#cli-aws-ecs) --generate-cli-skeleton > {.json}
+> * aws ecs [create-cluster](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/create-cluster.html) --generate-cli-skeleton > {.json}
+> * aws ecs [delete-cluster](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/delete-cluster.html) --generate-cli-skeleton > {.json}
 
 <br>
 
@@ -21,6 +22,9 @@ The page [CloudWatch Log Group](https://awscli.amazonaws.com/v2/documentation/ap
 <br>
 
 ### Tasks
+
+> [!TIP]
+> aws ecs [register-task-definition](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/register-task-definition.html) --generate-cli-skeleton > {.json}
 
 For an in depth understanding of task definitions study [Amazon ECS Task Definition](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definitions.html), and for a programmatic _task definition registration_ option study [register-task-definition](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/register-task-definition.html)[^task] 
 
