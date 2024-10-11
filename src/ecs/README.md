@@ -16,7 +16,7 @@ A [cluster](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/clusters
 
 ### Logs
 
-The page [CloudWatch Log Group](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/logs/index.html#cli-aws-logs) outlines log group creation.  This project includes log groups in task definitions.
+The page [CloudWatch Log Group](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/logs/index.html#cli-aws-logs) outlines log group creation.  Each of the project's task definitions includes a log group.
 
 <br>
 
