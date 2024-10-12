@@ -11,8 +11,8 @@ tau=2s
 path=file://src
 
 # The log group of the task definition
-aws logs create-log-group --cli-input-json "$path/ecs/logs/acquire/logs.json"
-aws logs create-log-group --cli-input-json "$path/ecs/logs/prepare/logs.json"
+aws logs create-log-group --cli-input-json "$path/ecs/logs/acquire/define.json"
+aws logs create-log-group --cli-input-json "$path/ecs/logs/prepare/define.json"
 
 sleep $tau
 
