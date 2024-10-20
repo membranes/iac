@@ -6,4 +6,4 @@ comment
 
 path=file://src
 
-aws stepfunctions update-state-machine --cli-input-json $path/update.json --definition $path/steps/machine.asl.json
+aws stepfunctions update-state-machine --cli-input-json $path/steps/data/update.json --definition $path/steps/data/machine.asl.json
