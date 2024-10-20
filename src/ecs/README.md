@@ -38,6 +38,11 @@ Beware:[^errors]
   * Again, for the correct settings study [Task Size](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definition_parameters.html)
 
 
+For more about graphics processing unit dependent tasks visit [Amazon ECS task definitions for GPU workloads](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-gpu.html)
+
+* $1$ for cases using Trainer's `hyperparameter_search`
+* $\ge 1$ if training via Ray's distributed hyperparameter search.
+
 <br>
 <br>
 
