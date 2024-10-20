@@ -20,7 +20,7 @@ aws ecs deregister-task-definition --cli-input-json $path/ecs/tasks/prepare/dere
 sleep $tau
 
 # Delete Task Definition/s
-aws ecs delete-task-definitions --cli-input-json $path/ecs/tasks/delete.json
+aws ecs delete-task-definitions --cli-input-json $path/ecs/tasks/delete-data.json
 sleep $tau
 
 # Delete Log Group
