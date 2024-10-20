@@ -43,6 +43,13 @@ For more about graphics processing unit dependent tasks visit [Amazon ECS task d
 * $1$ for cases using Trainer's `hyperparameter_search`
 * $\ge 1$ if training via Ray's distributed hyperparameter search.
 
+
+Of interest:
+
+* [Container Definitions](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definition_parameters.html#container_definitions)
+* [Passing Data to an Amazon ECS Task](https://docs.aws.amazon.com/step-functions/latest/dg/connect-ecs.html#connect-ecs-pass-to)
+* [Amazon ECS task definitions for GPU workloads](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-gpu.html)
+
 <br>
 <br>
 
