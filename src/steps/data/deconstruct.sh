@@ -11,7 +11,7 @@ tau=2s
 path=file://src
 
 # Delete Machine
-# aws stepfunctions delete-state-machine --cli-input-json $path/steps/delete.json
+aws stepfunctions delete-state-machine --cli-input-json $path/steps/data/delete.json
 sleep $tau
 
 # De-register Task Definition/s
