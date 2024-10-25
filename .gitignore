@@ -41,3 +41,4 @@ terraform.rc
 /src/**/*.json
 script.sh
 data.txt
+data-base64.txt
