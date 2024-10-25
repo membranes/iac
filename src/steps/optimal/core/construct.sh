@@ -7,5 +7,5 @@ comment
 # Path
 path=file://src
 
-# The state machine.  It consists of two task definitions; preceding step.
+# The state machine.
 aws stepfunctions create-state-machine --cli-input-json $path/steps/optimal/core/define.json --definition $path/steps/optimal/core/machine.asl.json
