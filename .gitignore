@@ -40,3 +40,4 @@ terraform.rc
 # Exclude
 /src/**/*.json
 script.sh
+data.txt
