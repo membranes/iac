@@ -12,6 +12,10 @@
 
 A [cluster](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/clusters.html) for a group of tasks and services.[^cluster]
 
+* [Bootstrapping Amazon ECS Linux container instances to pass data](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/bootstrap_container_instance.html)
+* [Creating an Amazon ECS cluster for the Amazon EC2 launch type](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/create-ec2-cluster-console-v2.html)
+* [Amazon ECS launch types](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/launch_types.html)
+
 
 <br>
 
