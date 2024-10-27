@@ -8,12 +8,12 @@ comment
 tau=2s
 
 # Path
-path=file://src
+path=file://src/core
 
 # The log group of the task definition
-aws logs create-log-group --cli-input-json "$path/ecs/logs/optimal/define-core.json"
+aws logs create-log-group --cli-input-json "$path/ecs/logs/define.json"
 
 sleep $tau
 
 # The task definition vis-à-vis this repository.
-aws ecs register-task-definition --cli-input-json "$path/ecs/tasks/optimal/define-core.json"
+aws ecs register-task-definition --cli-input-json "$path/ecs/tasks/define-core.json"
