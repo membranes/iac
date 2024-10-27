@@ -11,7 +11,14 @@
 
 * [Auto Scaling](https://docs.aws.amazon.com/autoscaling/)
   * [create-auto-scaling-group](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/create-auto-scaling-group.html)
+  * aws autoscaling delete-auto-scaling-group --auto-scaling-group-name {auto.scaling.group.name}
 
+
+<br>
+
+echo ECS_CLUSTER="GraphicsCluster" >> /etc/ecs/ecs.config;
+
+echo ECS_ENABLE_GPU_SUPPORT=true >> /etc/ecs/ecs.config
 
 <br>
 
