@@ -8,10 +8,10 @@ comment
 tau=2s
 
 # Path
-path=file://src
+path=file://src/data
 
 # Delete Machine
-aws stepfunctions delete-state-machine --cli-input-json $path/steps/data/delete.json
+aws stepfunctions delete-state-machine --cli-input-json $path/steps/delete.json
 sleep $tau
 
 # De-register Task Definition/s
