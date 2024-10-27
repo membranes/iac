@@ -1,5 +1,5 @@
 #!/bin/bash
 
-path=file://src
+path=file://src/core
 
-aws autoscaling create-auto-scaling-group --cli-input-json $path/ec2/0001/autoscaling.json
+aws autoscaling create-auto-scaling-group --cli-input-json $path/ec2/autoscaling.json
