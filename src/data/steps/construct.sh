@@ -8,7 +8,7 @@ comment
 tau=2s
 
 # Path
-path=file://src
+path=file://src/data
 
 # The log group of the task definition
 aws logs create-log-group --cli-input-json "$path/ecs/logs/acquire/define.json"
@@ -23,4 +23,4 @@ aws ecs register-task-definition --cli-input-json "$path/ecs/tasks/prepare/defin
 sleep $tau
 
 # The state machine.  It consists of two task definitions; preceding step.
-aws stepfunctions create-state-machine --cli-input-json $path/steps/data/define.json --definition $path/steps/data/machine.asl.json
+aws stepfunctions create-state-machine --cli-input-json $path/steps/define.json --definition $path/steps/machine.asl.json
