@@ -8,4 +8,4 @@ comment
 tau=2s
 
 # Path
-path=file://src
+path=file://src/core
