@@ -5,7 +5,7 @@ This script assumes that Amazon ECS (Elastic Container Service) Cluster the task
 comment
 
 # Path
-path=file://src
+path=file://src/core
 
 # The state machine.
-aws stepfunctions create-state-machine --cli-input-json $path/steps/optimal/core/define.json --definition $path/steps/optimal/core/machine.asl.json
+aws stepfunctions create-state-machine --cli-input-json $path/steps/define.json --definition $path/steps/machine.asl.json
