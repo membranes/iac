@@ -36,9 +36,15 @@ override.tf.json
 .terraformrc
 terraform.rc
 
-
-# Exclude
+# Infrastructure as Code Definitions
 /src/**/*.json
-script.sh
+
+# Data
 data.txt
 data-base64.txt
+
+# IntelliJ IDEA
+.idea
+
+# Setting Up
+script.sh
