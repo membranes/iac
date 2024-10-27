@@ -17,7 +17,7 @@
 
 ### Testing
 
-Foremost:
+**Foremost**:
 
 * define.json
 * aws ec2 create-launch-template --cli-input-json file://src/core/ec2/define.json
@@ -29,7 +29,7 @@ Foremost:
 
 <br>
 
-<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect-linux-inst-ssh.html" target="_blank">Connecting</a>:
+<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect-linux-inst-ssh.html" target="_blank"><b>Connecting</b></a>:
 
 If an EC2 (Elastic Cloud Compute) Instance, the instance user name is usually `ec2-user`
 
@@ -47,7 +47,7 @@ aws ecr get-login-password --region {region.code} | docker login --username AWS 
 
 <br>
 
-Beware:
+**Beware**:
 
 * [huggingface.co environment variables](https://huggingface.co/docs/huggingface_hub/main/en/package_reference/environment_variables)
 * [aws configure](https://thereferences.github.io/practice/docs/build/html/development/integration/cloud.html)
