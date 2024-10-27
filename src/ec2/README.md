@@ -24,6 +24,8 @@ echo ECS_ENABLE_GPU_SUPPORT=true >> /etc/ecs/ecs.config
 
 ### Steps
 
+<details><b>Steps</b><summary>
+
 ```mermaid
   stateDiagram
     direction TB
@@ -51,6 +53,8 @@ echo ECS_ENABLE_GPU_SUPPORT=true >> /etc/ecs/ecs.config
     id05 --> id06:::aws : <span style='font-size#58; small#59;'>#8194; #8194; #8194; aws autoscaling\ncreate-auto-scaling-group</span>
     id06 --> [*]
 ```
+
+</summary></details>
 
 <br>
 <br>
