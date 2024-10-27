@@ -24,7 +24,7 @@ echo ECS_ENABLE_GPU_SUPPORT=true >> /etc/ecs/ecs.config
 
 ### Steps
 
-<details><summary><b>Steps</b>
+<details><summary><b>Steps</b></summary>
 
 ```mermaid
   stateDiagram
@@ -54,7 +54,7 @@ echo ECS_ENABLE_GPU_SUPPORT=true >> /etc/ecs/ecs.config
     id06 --> [*]
 ```
 
-</summary></details>
+</details>
 
 <br>
 <br>
