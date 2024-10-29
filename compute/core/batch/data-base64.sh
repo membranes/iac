@@ -1,3 +1,3 @@
 #!/bin/bash
 
-base64 src/core/ec2/data.txt > src/core/ec2/data-base64.txt
+base64 compute/core/batch/data.txt > compute/core/batch/data-base64.txt
