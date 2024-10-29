@@ -20,11 +20,9 @@
 **Foremost**:
 
 * define.json
-* aws ec2 create-launch-template --cli-input-json file://src/core/ec2/define.json
+* aws ec2 create-launch-template --cli-input-json file://src/core/ec2/define.json --region {region}
 * launch.json &larr; the launch template identifier of the previous step
 * data.txt
-  * echo ECS_CLUSTER="GraphicsCluster" >> /etc/ecs/ecs.config;
-  * echo ECS_ENABLE_GPU_SUPPORT=true >> /etc/ecs/ecs.config
 * aws ec2 run-instances --user-data $path/ec2/data.txt --cli-input-json $path/ec2/launch.json
 
 <br>
