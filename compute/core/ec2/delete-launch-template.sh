@@ -1,3 +1,5 @@
 #!/bin/bash
 
-aws ec2 delete-launch-template --cli-input-json file://src/core/ec2/delete.json
+path=file://compute/core/
+
+aws ec2 delete-launch-template --cli-input-json $path/ec2/delete.json
