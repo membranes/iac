@@ -8,4 +8,4 @@ comment
 tau=2s
 
 # Path
-path=file://src/core
+path=file://compute/core
