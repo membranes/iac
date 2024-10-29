@@ -38,6 +38,7 @@ terraform.rc
 
 # Infrastructure as Code Definitions
 /src/**/*.json
+/compute/**/*.json
 
 # Data
 data.txt
