@@ -8,7 +8,7 @@ comment
 tau=2s
 
 # Path
-path=file://src
+path=file://src/data
 
 # The log group of the task definition
 aws logs create-log-group --cli-input-json "$path/ecs/logs/acquire/define.json"

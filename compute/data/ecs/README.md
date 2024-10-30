@@ -12,6 +12,10 @@
 
 A [cluster](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/clusters.html) for a group of tasks and services.[^cluster]
 
+* [Bootstrapping Amazon ECS Linux container instances to pass data](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/bootstrap_container_instance.html)
+* [Creating an Amazon ECS cluster for the Amazon EC2 launch type](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/create-ec2-cluster-console-v2.html)
+* [Amazon ECS launch types](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/launch_types.html)
+
 
 <br>
 
@@ -37,6 +41,18 @@ Beware:[^errors]
 * --memory node
   * Again, for the correct settings study [Task Size](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definition_parameters.html)
 
+
+For more about graphics processing unit dependent tasks visit [Amazon ECS task definitions for GPU workloads](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-gpu.html)
+
+* $1$ for cases using Trainer's `hyperparameter_search`
+* $\ge 1$ if training via Ray's distributed hyperparameter search.
+
+
+Of interest:
+
+* [Container Definitions](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definition_parameters.html#container_definitions)
+* [Passing Data to an Amazon ECS Task](https://docs.aws.amazon.com/step-functions/latest/dg/connect-ecs.html#connect-ecs-pass-to)
+* [Amazon ECS task definitions for GPU workloads](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-gpu.html)
 
 <br>
 <br>
