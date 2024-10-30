@@ -56,10 +56,7 @@ aws ecr get-login-password --region {region.code} | docker login --username AWS 
 
 ### Steps
 
-> [!NOTE]
-> In Progress
-
-<details><summary><b>Steps</b></summary>
+<details><summary><b>Thinking</b></summary>
 
 ```mermaid
   stateDiagram
