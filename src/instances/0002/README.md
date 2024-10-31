@@ -2,16 +2,12 @@
 
 ### Notes
 
-* [Launch a GPU container instance for Amazon ECS](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/gpu-launch.html)
-  * [Amazon ECS-optimized Linux AMIs](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-optimized_AMI.html)
+Templates, and execution of templates.
+
   * [create-launch-template](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/create-launch-template.html), [Create an Amazon EC2 launch template](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-launch-template.html#create-launch-template-define-parameters)
   * [delete-launch-template](https://docs.aws.amazon.com/cli/latest/reference/ec2/delete-launch-template.html)
   * [run-instances](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/run-instances.html)
   * [Run commands when you launch an EC2 instance with user data input](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/user-data.html)
-
-* [Auto Scaling](https://docs.aws.amazon.com/autoscaling/)
-  * [create-auto-scaling-group](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/create-auto-scaling-group.html)
-  * aws autoscaling delete-auto-scaling-group --auto-scaling-group-name {auto.scaling.group.name}
 
 <br>
 
@@ -29,23 +25,38 @@
 
 <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect-linux-inst-ssh.html" target="_blank"><b>Connecting</b></a>:
 
-If an EC2 (Elastic Cloud Compute) Instance, the instance user name is usually `ec2-user`
+If an EC2 (Elastic Compute Cloud) Instance, the instance user name is usually `ec2-user`
 
 ```shell
 chmod 400 {key.pair.name}
 ssh -i /path/{key.pair.name} {instance.user.name}@instance-public-dns-name
 ```
 
-Prior to testing a ECR (Elastice Container Registry) image container, within a private repository, login
+Prior to testing a ECR (Elastice Container Registry) image container of a private repository, login.  For example
+
+```shell
+aws ecr get-login-password --region {region.code} | sudo docker login --username AWS \ 
+     --password-stdin {aws.account.identifier}.dkr.ecr.{region.code}.amazonaws.com
+sudo docker pull \
+     {aws.account.identifier}.dkr.ecr.{region.code}.amazonaws.com/{repository.name}:{image.tag}
+sudo docker run \
+     {aws.account.identifier}.dkr.ecr.{region.code}.amazonaws.com/{repository.name}:{image.tag}
+```
+
+The `sudo` key might not be required if an EC2 machine is launched with a *user data file* that ensures docker usage without `sudo`, therefore
 
 ```shell
 aws ecr get-login-password --region {region.code} | docker login --username AWS \
-     --password-stdin {aws.account.identifier}.dkr.ecr.{region.code}.amazonaws.com
+    --password-stdin {aws.account.identifier}.dkr.ecr.{region.code}.amazonaws.com
+docker pull \
+     {aws.account.identifier}.dkr.ecr.{region.code}.amazonaws.com/{repository.name}:{tag.name}
+docker run \
+     {aws.account.identifier}.dkr.ecr.{region.code}.amazonaws.com/{repository.name}:{tag.name}
 ```
 
 <br>
 
-**Beware**:
+### Beware
 
 * [huggingface.co environment variables](https://huggingface.co/docs/huggingface_hub/main/en/package_reference/environment_variables)
 * [aws configure](https://thereferences.github.io/practice/docs/build/html/development/integration/cloud.html)
