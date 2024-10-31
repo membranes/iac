@@ -2,7 +2,7 @@
 
 ## Computation Settings for the Core Hyperparameter Search Module<br>Via Auto Scaling Capacity Provider
 
-### Notes
+### Steps
 
 <details><summary><b>Initial Steps</b></summary>
 
@@ -35,6 +35,22 @@
 ```
 
 </details>
+
+<br>
+
+### Task Definition
+
+At this stage?
+
+```json
+{
+  "containerDefinitions": [
+    {
+      "command": ["...", "..."]
+    }
+  ]
+}
+```
 
 <br>
 <br>
