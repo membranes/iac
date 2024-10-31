@@ -6,4 +6,4 @@ comment
 
 path=file://compute/core
 
-aws ec2 run-instances --user-data $path/ec2/data.txt --cli-input-json $path/ec2/launch.json
+aws ec2 run-instances --user-data $path/ec2/data.txt --cli-input-json $path/ec2/launch.json --region $1
