@@ -9,8 +9,6 @@ Templates, and execution of templates.
   * [run-instances](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/run-instances.html)
   * [Run commands when you launch an EC2 instance with user data input](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/user-data.html)
 
-
-
 <br>
 
 ### Testing
