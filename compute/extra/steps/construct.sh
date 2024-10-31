@@ -8,7 +8,7 @@ comment
 tau=2s
 
 # Path
-path=file://compute/core
+path=file://compute/extra
 
 # The log group of the task definition
 aws logs create-log-group --cli-input-json "$path/ecs/logs/define.json"
@@ -16,7 +16,7 @@ aws logs create-log-group --cli-input-json "$path/ecs/logs/define.json"
 sleep $tau
 
 # The task definition vis-à-vis this repository.
-aws ecs register-task-definition --cli-input-json "$path/ecs/tasks/define-core.json"
+aws ecs register-task-definition --cli-input-json "$path/ecs/tasks/define.json"
 
 sleep $tau
 
