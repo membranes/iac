@@ -16,7 +16,6 @@
 [Create Compute Environment](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/batch/create-compute-environment.html)
 
 Exclude
-
 ```json
 "ec2Configuration": [
   {
@@ -27,7 +26,6 @@ Exclude
 ```
 
 Instead
-
 ```json
 "ec2Configuration": []
 ```
