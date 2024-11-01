@@ -1,6 +1,6 @@
 <br>
 
-## Test Environments
+## Test Environment (Graphics Processing Unit)
 
 ### Creating
 
@@ -82,6 +82,17 @@ docker run \
      {aws.account.identifier}.dkr.ecr.{region.code}.amazonaws.com/{repository.name}:{tag.name}
 ```
 
+A graphics processing unit dependent run
+
+```shell
+sudo docker run --rm --gpus all --shm-size=16gb -e AWS_DEFAULT_REGION={region}
+     {aws.account.identifier}.dkr.ecr.{region}.amazonaws.com/{repository}:{tag}
+```
+
+* export AWS_DEFAULT_REGION={region}
+* export AWS_REGION={region}
+
+
 <br>
 
 ### References
@@ -90,6 +101,8 @@ docker run \
 * [delete-launch-template](https://docs.aws.amazon.com/cli/latest/reference/ec2/delete-launch-template.html)
 * [run-instances](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/run-instances.html)
 * [aws configure](https://thereferences.github.io/practice/docs/build/html/development/integration/cloud.html)
+
+* [Amazon EC2, Docker Containers, Credentials](https://www.baeldung.com/ops/docker-container-pass-aws-credentials)
 
 <br>
 <br>
