@@ -1,36 +1,64 @@
 <br>
 
-### Notes
+## Test Environments
 
-Templates, and execution of templates.
+### Creating
 
-  * [create-launch-template](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/create-launch-template.html), [Create an Amazon EC2 launch template](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-launch-template.html#create-launch-template-define-parameters)
-  * [delete-launch-template](https://docs.aws.amazon.com/cli/latest/reference/ec2/delete-launch-template.html)
-  * [run-instances](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/run-instances.html)
-  * [Run commands when you launch an EC2 instance with user data input](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/user-data.html)
+```mermaid
+stateDiagram-v2
+    direction LR
+    
+    id01: definition.json
+    id02: DIRECTIVE#58; create<br>launch template
+    id03: launch.json
+    id04: data.txt
+    id05: DIRECTIVE#58; run an<br>instance of the template
+    
+    id01:::feeds --> id02
+    id02:::steps --> id03 : embed launch<br>template code
+    id03:::feeds --> id05:::steps
+    id04:::feeds --> id05
+
+    classDef feeds fill:orange,stroke-width:0,font-size:small,opacity:0.85;
+    classDef steps fill:#000000,color:white,font-style:italic,stroke-width:0,font-size:small,opacity:1;
+```
 
 <br>
 
-### Testing
+In brief:
 
-**Foremost**:
+* A definition.json encodes the template details for EC2 (Elastic Cloud Compute) instance launching. 
+* The directive `aws ec2 create-launch-template --cli-input-json file://src/core/ec2/definition.json --region {region}` creates a template.
+* The template has an identification code, this code is embed in a launch.json.
+     ```json
+     {
+          "LaunchTemplate": {
+               "LaunchTemplateId": "...",
+               "Version": "$Latest"
+          }
+    }
+    ```
 
-* define.json
-* aws ec2 create-launch-template --cli-input-json file://src/core/ec2/define.json --region {region}
-* launch.json &larr; the launch template identifier of the previous step
-* data.txt
-* aws ec2 run-instances --user-data $path/ec2/data.txt --cli-input-json $path/ec2/launch.json
+* A `data.txt` script encodes custome launch time directives.[^user-data]
+* The directive `aws ec2 run-instances --user-data $path/ec2/data.txt --cli-input-json $path/ec2/launch.json --region {region}` runs an instance of the template.
 
 <br>
 
-<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect-linux-inst-ssh.html" target="_blank"><b>Connecting</b></a>:
+### Connecting
 
-If an EC2 (Elastic Compute Cloud) Instance, the instance user name is usually `ec2-user`
+To <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect-linux-inst-ssh.html" target="_blank">connect</a> to an EC2 (Elastic Compute Cloud) instance via a Key Pair
 
 ```shell
 chmod 400 {key.pair.name}
 ssh -i /path/{key.pair.name} {instance.user.name}@instance-public-dns-name
 ```
+
+The instance user name is usually `ec2-user`.
+
+<br>
+
+
+#### Exploring an elastic container registry image
 
 Prior to testing a ECR (Elastice Container Registry) image container of a private repository, login.  For example
 
@@ -56,12 +84,13 @@ docker run \
 
 <br>
 
-### Beware
+### References
 
-* [huggingface.co environment variables](https://huggingface.co/docs/huggingface_hub/main/en/package_reference/environment_variables)
+* [create-launch-template](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/create-launch-template.html), [Create an Amazon EC2 launch template](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-launch-template.html#create-launch-template-define-parameters)
+* [delete-launch-template](https://docs.aws.amazon.com/cli/latest/reference/ec2/delete-launch-template.html)
+* [run-instances](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/run-instances.html)
 * [aws configure](https://thereferences.github.io/practice/docs/build/html/development/integration/cloud.html)
 
-
 <br>
 <br>
 
@@ -73,3 +102,6 @@ docker run \
 
 <br>
 <br>
+
+
+[^user-data]: [Run commands when you launch an EC2 instance with user data input](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/user-data.html)
