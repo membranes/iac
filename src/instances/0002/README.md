@@ -15,12 +15,12 @@ stateDiagram-v2
     id05: DIRECTIVE#58; run an<br>instance of the template
     
     id01:::feeds --> id02
-    id02:::steps --> id03 : <span style='font-size#58;small'>embed launch<br>template code</span>
+    id02:::steps --> id03 : <span style='font-size#58;x-small'>embed launch<br>template code</span>
     id03:::feeds --> id05:::steps
     id04:::feeds --> id05
 
-    classDef feeds fill:orange,stroke-width:0,font-size:small,opacity:0.85;
-    classDef steps fill:#000000,color:white,font-style:italic,stroke-width:0,font-size:small,opacity:1;
+    classDef feeds fill:orange,stroke-width:0,font-size:x-small,opacity:0.85;
+    classDef steps fill:#000000,color:white,font-style:italic,stroke-width:0,font-size:x-small,opacity:1;
 ```
 
 <br>
