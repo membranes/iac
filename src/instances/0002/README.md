@@ -52,14 +52,7 @@ chmod 400 {key.pair.name}
 ssh -i /path/{key.pair.name} {instance.user.name}@instance-public-dns-name
 ```
 
-The instance user name is usually `ec2-user`.
-
-<br>
-
-
-#### Exploring an elastic container registry image
-
-Prior to testing a ECR (Elastice Container Registry) image container of a private repository, login.  For example
+The instance user name is usually `ec2-user`.  Subsequently, explore elastic container registry images.  For example, prior to exploring/testing an ECR (Elastic Container Registry) image container **of a private repository**, login, then pull & run:
 
 ```shell
 aws ecr get-login-password --region {region.code} | sudo docker login --username AWS \ 
@@ -81,12 +74,14 @@ docker run \
      {aws.account.identifier}.dkr.ecr.{region.code}.amazonaws.com/{repository.name}:{tag.name}
 ```
 
-A graphics processing unit dependent run
+For a graphics processing unit dependent run, a directive akin to
 
 ```shell
 sudo docker run --rm --gpus all --shm-size=16gb -e AWS_DEFAULT_REGION={region}
      {aws.account.identifier}.dkr.ecr.{region}.amazonaws.com/{repository}:{tag}
 ```
+
+might be required.
 
 * export AWS_DEFAULT_REGION={region}
 * export AWS_REGION={region}
