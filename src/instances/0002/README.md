@@ -15,7 +15,7 @@ stateDiagram-v2
     id05: DIRECTIVE#58; run an<br>instance of the template
     
     id01:::feeds --> id02
-    id02:::steps --> id03 : embed launch<br>template code
+    id02:::steps --> id03 : <span style='font-size#58;small'>embed launch<br>template code</span>
     id03:::feeds --> id05:::steps
     id04:::feeds --> id05
 
@@ -38,7 +38,6 @@ In brief:
           }
     }
     ```
-
 * A `data.txt` script encodes custome launch time directives.[^user-data]
 * The directive `aws ec2 run-instances --user-data $path/ec2/data.txt --cli-input-json $path/ec2/launch.json --region {region}` runs an instance of the template.
 
@@ -92,7 +91,6 @@ sudo docker run --rm --gpus all --shm-size=16gb -e AWS_DEFAULT_REGION={region}
 * export AWS_DEFAULT_REGION={region}
 * export AWS_REGION={region}
 
-
 <br>
 
 ### References
@@ -101,7 +99,6 @@ sudo docker run --rm --gpus all --shm-size=16gb -e AWS_DEFAULT_REGION={region}
 * [delete-launch-template](https://docs.aws.amazon.com/cli/latest/reference/ec2/delete-launch-template.html)
 * [run-instances](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/run-instances.html)
 * [aws configure](https://thereferences.github.io/practice/docs/build/html/development/integration/cloud.html)
-
 * [Amazon EC2, Docker Containers, Credentials](https://www.baeldung.com/ops/docker-container-pass-aws-credentials)
 
 <br>
