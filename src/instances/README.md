@@ -8,7 +8,7 @@
 stateDiagram-v2
     direction LR
     
-    id01: definition.json
+    id01: define.json
     id02: DIRECTIVE#58; create<br>launch template
     id03: launch.json
     id04: data.txt
