@@ -1,6 +1,8 @@
 <br>
 
-## Computation Settings for the Core Hyperparameter Search Module<br>Via Auto Scaling Capacity Provider
+## Elastic Container Service & Step Functions
+
+Computation Settings for the Core Hyperparameter Search Module<br>Via Auto Scaling Capacity Provider
 
 ### Steps
 

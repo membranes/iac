@@ -48,6 +48,10 @@ data-base64.txt
 .idea
 
 # Setting Up
+s3.sh
 script.sh
 
 *-private*
+*-mime
+data.sh
+*.py
