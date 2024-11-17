@@ -4,7 +4,16 @@
 
 <br>
 
-### Notes
+### Steps
+
+[Batch: Getting Started](https://docs.aws.amazon.com/batch/latest/userguide/getting-started-ec2.html):
+* [Create a compute environment.](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/batch/create-compute-environment.html)
+* [Create a job queue.](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/batch/create-job-queue.html)
+* [Register a job definition.](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/batch/register-job-definition.html)
+
+<br>
+
+### Important
 
 * Beware, either *compute environment Security Groups* (compute-environment.json) or *Network Interfaces in Launch Template* (define.json) are exclusively allowed.
 * In a batch queue definition, the object `reason` of object `jobStateTimeLimitActions` has options
@@ -12,12 +21,6 @@
   * MISCONFIGURATION:COMPUTE_ENVIRONMENT_MAX_RESOURCE
   * CAPACITY:INSUFFICIENT_INSTANCE_CAPACITY
 * <a href="https://docs.aws.amazon.com/batch/latest/userguide/instance_IAM_role.html" _target="_blank">Amazon ECS (Elastic Container Service) Instance Role</a>
-
-<br>
-
-### Compute Environment
-
-[Create Compute Environment](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/batch/create-compute-environment.html)
 
 <br>
 
