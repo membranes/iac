@@ -8,7 +8,7 @@ comment
 tau=2s
 
 # Path
-path=file://compute/extra
+path=file://compute/reference
 
 # The log group of the task definition
 aws logs create-log-group --cli-input-json "$path/ecs/logs/define.json"
