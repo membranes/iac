@@ -15,21 +15,6 @@
 
 [Create Compute Environment](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/batch/create-compute-environment.html)
 
-Exclude
-```json
-"ec2Configuration": [
-  {
-    "imageType": "ECS_AL2_NVIDIA",
-    "imageIdOverride": "ami-02c4a59e25dcae346"
-  }
-]
-```
-
-Instead
-```json
-"ec2Configuration": []
-```
-
 <br>
 
 ### References
