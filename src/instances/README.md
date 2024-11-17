@@ -28,7 +28,7 @@ stateDiagram-v2
 In brief:
 
 * A definition.json encodes the template details for EC2 (Elastic Cloud Compute) instance launching. 
-* The directive `aws ec2 create-launch-template --cli-input-json file://src/core/ec2/definition.json --region {region}` creates a template.
+* For example, the directive `aws ec2 create-launch-template --cli-input-json file://src/instances/0002/define.json --region {region}` creates a template.
 * The template has an identification code, this code is embed in a launch.json.
      ```json
      {
@@ -38,8 +38,8 @@ In brief:
           }
     }
     ```
-* A `data.txt` script encodes custome launch time directives.[^user-data]
-* The directive `aws ec2 run-instances --user-data $path/ec2/data.txt --cli-input-json $path/ec2/launch.json --region {region}` runs an instance of the template.
+* A `data.txt` script encodes custom launch time directives.[^user-data]
+* The directive `aws ec2 run-instances --user-data file://src/instances/0002/data.txt --cli-input-json file://src/instances/0002/launch.json --region {region}` runs an instance of the template.
 
 <br>
 
