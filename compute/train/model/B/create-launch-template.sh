@@ -2,6 +2,9 @@
 
 : << 'comment'
 This script creates the launch template of a training phase
+    * $1: A name for the launch template.
+    * $2: The letter code/representation of a model.
+    * $3: An Amazon region code.
 comment
 
 path=file://compute/train
