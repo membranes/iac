@@ -1,5 +1,5 @@
 #!/bin/bash
 
-path=file://compute/extra
+path=file://compute/reference/ecs/ec2
 
-aws autoscaling create-auto-scaling-group --cli-input-json $path/ec2/autoscaling.json
+aws autoscaling create-auto-scaling-group --cli-input-json "$path/autoscaling.json"
