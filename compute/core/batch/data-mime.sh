@@ -9,4 +9,4 @@ comment
 
 path=compute/core/batch
 
-cloud-init devel make-mime -a $path/data.sh:x-shellscript > $path/data-mime
+cloud-init devel make-mime -a $path/data.txt:x-shellscript > $path/data-mime
