@@ -11,7 +11,7 @@ aws ecr create-repository --generate-cli-skeleton > registry.json
 The registry.sh script is run via
 
 ```shell
-bash .iac/ecr/registry.sh {region}
+bash ~/src/ecr/registry.sh {region}
 ```
 
 Repository [deletion](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecr/delete-repository.html):
