@@ -6,4 +6,4 @@ comment
 
 path=file://compute/train/model
 
-aws ec2 run-instances --cli-input-json $path/$1/run.json --region $2
+aws ec2 run-instances --cli-input-json "$path/$1/run.json" --region $2
