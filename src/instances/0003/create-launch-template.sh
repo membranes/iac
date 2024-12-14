@@ -3,7 +3,7 @@
 << 'comment'
 Including
 
-    --launch-template-data '{"UserData":"$path/mime"}'
+    --launch-template-data '{"UserData":"$path/data-mime"}'
 
 in the directive may load the MIME (Multipurpose Internet Mail Extensions) user data.
 comment
