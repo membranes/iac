@@ -20,6 +20,9 @@ Beware ([REF](https://docs.aws.amazon.com/batch/latest/userguide/launch-template
 #### Boostrap
 
 * [MIME multi-part archive](https://cloudinit.readthedocs.io/en/latest/explanation/format.html#mime-multi-part-archive)
+* [MIME Example](https://repost.aws/knowledge-center/execute-user-data-ec2)
+* [Launch Template & User Data](https://docs.aws.amazon.com/autoscaling/ec2/userguide/examples-launch-templates-aws-cli.html#example-user-data)<br>
+    Possibly: --launch-template-data '{"UserData":"$path/mime"}'
 
 <br>
 
