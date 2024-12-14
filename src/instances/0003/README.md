@@ -1,8 +1,8 @@
 <br>
 
-Notes
+### Notes
 
-<br>
+For a step functions & batch dependent pipeline.
 
 #### Launch Templates
 
