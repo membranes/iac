@@ -23,6 +23,7 @@ Beware ([REF](https://docs.aws.amazon.com/batch/latest/userguide/launch-template
 * [MIME Example](https://repost.aws/knowledge-center/execute-user-data-ec2)
 * [Launch Template & User Data](https://docs.aws.amazon.com/autoscaling/ec2/userguide/examples-launch-templates-aws-cli.html#example-user-data)<br>
     Possibly: --launch-template-data '{"UserData":"$path/mime"}'
+* [User Data Expectations](https://docs.aws.amazon.com/batch/latest/userguide/launch-templates.html)
 
 <br>
 
