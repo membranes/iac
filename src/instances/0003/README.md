@@ -36,3 +36,15 @@ Beware ([REF](https://docs.aws.amazon.com/batch/latest/userguide/launch-template
 #### IPv6 & IPv4
 
 > "The Amazon ECS GPU-optimized AMI has IPv6 enabled, which causes issues when using yum. This can be resolved by configuring yum to use IPv4 with the following command. ([REF](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-gpu.html))
+
+<br>
+<br>
+
+<br>
+<br>
+
+<br>
+<br>
+
+<br>
+<br>
