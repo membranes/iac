@@ -161,6 +161,9 @@ docker run --rm --gpus all --shm-size=16gb -e AWS_DEFAULT_REGION={region.code}
 * [run-instances](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/run-instances.html)
 * [aws configure](https://thereferences.github.io/practice/docs/build/html/development/integration/cloud.html)
 * [Amazon EC2, Docker Containers, Credentials](https://www.baeldung.com/ops/docker-container-pass-aws-credentials)
+* [Previews of Amazon resources](https://aws.amazon.com/documentation-overview/)
+* [Documentation per resource](https://docs.aws.amazon.com)
+* [Instance Types](https://aws.amazon.com/ec2/instance-types/)
 
 <br>
 <br>
