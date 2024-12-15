@@ -4,7 +4,7 @@
 
 For a step functions, batch, and ECS (Elastic Container Service) dependent pipeline.
 
-#### Launch Templates
+### Launch Templates
 
 Beware ([REF](https://docs.aws.amazon.com/batch/latest/userguide/launch-templates.html)):
 
@@ -38,7 +38,7 @@ Batch job definition in relation to [docker run](https://docs.docker.com/referen
 
 <br>
 
-#### Integration Service
+### Integration Service
 
 Including, [Run a Job (.sync)](https://docs.aws.amazon.com/step-functions/latest/dg/connect-to-resource.html#connect-sync)
 
@@ -46,7 +46,7 @@ Including, [Run a Job (.sync)](https://docs.aws.amazon.com/step-functions/latest
 
 <br>
 
-#### Boostrap
+### Boostrap
 
 * [MIME multi-part archive](https://cloudinit.readthedocs.io/en/latest/explanation/format.html#mime-multi-part-archive)
 * [MIME Example](https://repost.aws/knowledge-center/execute-user-data-ec2)
@@ -58,20 +58,20 @@ Including, [Run a Job (.sync)](https://docs.aws.amazon.com/step-functions/latest
 
 <br>
 
-#### Step Functions
+### Step Functions
 
 * [States Language](https://states-language.net/spec.html)
 
 <br>
 
-#### IPv6 & IPv4
+### IPv6 & IPv4
 
 > "The Amazon ECS GPU-optimized AMI has IPv6 enabled, which causes issues when using yum. This can be resolved by configuring yum to use IPv4 with the following command. ([REF](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-gpu.html))
 
 
 <br>
 
-#### Testing a machine
+### Testing a machine
 
 ```bash
 docker run --gpus all --shm-size=15gb -p 6007:6007 -p 6006:6006 -p 8265:8265 -p 6379:6379 -e AWS_DEFAULT_REGION=eu-west-1 ghcr.io/membranes/text:master src/main.py --architecture bert
