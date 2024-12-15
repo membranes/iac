@@ -71,7 +71,7 @@ Including, [Run a Job (.sync)](https://docs.aws.amazon.com/step-functions/latest
 
 <br>
 
-### Testing a machine
+### Testing
 
 ```bash
 docker run --gpus all --shm-size=15gb -p 6007:6007 -p 6006:6006 -p 8265:8265 -p 6379:6379 -e AWS_DEFAULT_REGION=eu-west-1 ghcr.io/membranes/text:master src/main.py --architecture bert
