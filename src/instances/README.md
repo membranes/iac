@@ -151,6 +151,10 @@ docker run --rm --gpus all --shm-size=16gb -e AWS_DEFAULT_REGION={region.code}
      ghcr.io/{org}/{repository}:{branch} src/main.py --architecture bert
 ```
 
+```bash
+docker run --gpus all --shm-size=15gb -p 6007:6007 -p 6006:6006 -p 8265:8265 -p 6379:6379 -e AWS_DEFAULT_REGION={region.code} ghcr.io/membranes/text:master src/main.py --architecture bert
+```
+
 <br>
 
 
