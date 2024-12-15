@@ -42,6 +42,8 @@ Including, [Run a Job (.sync)](https://docs.aws.amazon.com/step-functions/latest
 * [Launch Template & User Data](https://docs.aws.amazon.com/autoscaling/ec2/userguide/examples-launch-templates-aws-cli.html#example-user-data)<br>
     Possibly: --launch-template-data '{"UserData":"$path/mime"}'
 * [User Data Expectations](https://docs.aws.amazon.com/batch/latest/userguide/launch-templates.html)
+* [Bootstrapping](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/bootstrap_container_instance.html)
+  * https://blog.tedivm.com/guides/2020/07/aws-ecs-with-ubuntu-and-gpu-support/
 
 <br>
 
