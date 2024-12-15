@@ -30,10 +30,11 @@ Batch job definition in relation to [docker run](https://docs.docker.com/referen
 
 * COMMAND [exec form](https://docs.docker.com/reference/dockerfile/#cmd)<br>["--gpus", "all", "--shm-size", "=16gb", "-p", "6007:6007", "-p", "6006:6006", "-p", "8265:8265", "-p", "6379:6379",  "src/main.py", "--architecture", "bert"]
 
-
 * ENVIRONMENT VARIABLES
   * **name**: AWS_DEFAULT_REGION<br>**value**: eu-west-1
 
+* PARAMETERS
+  * [Examples](https://docs.aws.amazon.com/batch/latest/userguide/example-use-parameters.html)
 
 <br>
 
@@ -66,6 +67,15 @@ Including, [Run a Job (.sync)](https://docs.aws.amazon.com/step-functions/latest
 #### IPv6 & IPv4
 
 > "The Amazon ECS GPU-optimized AMI has IPv6 enabled, which causes issues when using yum. This can be resolved by configuring yum to use IPv4 with the following command. ([REF](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-gpu.html))
+
+
+<br>
+
+#### Testing a machine
+
+```bash
+docker run --gpus all --shm-size=15gb -p 6007:6007 -p 6006:6006 -p 8265:8265 -p 6379:6379 -e AWS_DEFAULT_REGION=eu-west-1 ghcr.io/membranes/text:master src/main.py --architecture bert
+```
 
 <br>
 <br>
