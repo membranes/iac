@@ -15,8 +15,11 @@ Beware ([REF](https://docs.aws.amazon.com/batch/latest/userguide/launch-template
 > * *Instance market options (AWS Batch must control Spot Instance configuration)*
 > * *Disable API termination (AWS Batch must control instance lifecycle)*
 
+
 Additionally:
 
+* [In-depth Tutorial](https://docs.aws.amazon.com/batch/latest/userguide/getting-started-ec2.html)
+* [Run AWS Batch workloads with Step Functions](https://docs.aws.amazon.com/step-functions/latest/dg/connect-batch.html)
 * If depending on Amazon Machine Images, instead of other Amazon catalogue images, study
     * [Elastic Container Service (ECS) Opt. Images](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-optimized_AMI.html)
     * [Batch, GPU (Graphics Processing Unit), AMI (Amazon Machine Image) ](https://docs.aws.amazon.com/batch/latest/userguide/batch-gpu-ami.html)
