@@ -2,7 +2,7 @@
 
 ### Notes
 
-For a step functions & batch dependent pipeline.
+For a step functions, batch, and ECS (Elastic Container Service) dependent pipeline.
 
 #### Launch Templates
 
@@ -14,6 +14,21 @@ Beware ([REF](https://docs.aws.amazon.com/batch/latest/userguide/launch-template
 > * *Network interface subnets (specify your desired subnets when you create your compute environment)*
 > * *Instance market options (AWS Batch must control Spot Instance configuration)*
 > * *Disable API termination (AWS Batch must control instance lifecycle)*
+
+Additionally:
+
+* If depending on Amazon Machine Images, instead of other Amazon catalogue images, study
+    * [Elastic Container Service (ECS) Opt. Images](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-optimized_AMI.html)
+    * [Batch, GPU (Graphics Processing Unit), AMI (Amazon Machine Image) ](https://docs.aws.amazon.com/batch/latest/userguide/batch-gpu-ami.html)
+* [ECS & GPU (Graphics Processing Unit) Workloads](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-gpu.html)
+
+<br>
+
+#### Integration Service
+
+Including, [Run a Job (.sync)](https://docs.aws.amazon.com/step-functions/latest/dg/connect-to-resource.html#connect-sync)
+
+> *... Step Functions can wait for a request to complete before progressing to the next state. To have Step Functions wait, specify the "Resource" field in your task state definition with the .sync suffix appended after ...*
 
 <br>
 
