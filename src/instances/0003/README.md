@@ -26,7 +26,7 @@ Additionally:
 * [ECS & GPU (Graphics Processing Unit) Workloads](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-gpu.html)
 
 
-Batch job definition:
+Batch job definition in relation to [docker run](https://docs.docker.com/reference/cli/docker/container/run/).  Review [shared memory size](https://docs.docker.com/reference/cli/docker/buildx/build/#shm-size), i.e., `--shm-size.`
 
 * COMMAND [exec form](https://docs.docker.com/reference/dockerfile/#cmd)<br>["--gpus", "all", "--shm-size", "=16gb", "-p", "6007:6007", "-p", "6006:6006", "-p", "8265:8265", "-p", "6379:6379",  "src/main.py", "--architecture", "bert"]
 
