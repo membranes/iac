@@ -28,7 +28,7 @@ Additionally:
 
 Batch job definition:
 
-* COMMAND [exec form](https://docs.docker.com/reference/dockerfile/#cmd)<br>{"--gpus", "all", "--shm-size", "=16gb", "-p", "6007:6007", "-p", "6006:6006", "-p", "8265:8265", "-p", "6379:6379",  "src/main.py", "--architecture", "bert"}
+* COMMAND [exec form](https://docs.docker.com/reference/dockerfile/#cmd)<br>["--gpus", "all", "--shm-size", "=16gb", "-p", "6007:6007", "-p", "6006:6006", "-p", "8265:8265", "-p", "6379:6379",  "src/main.py", "--architecture", "bert"]
 
 
 * ENVIRONMENT VARIABLES
