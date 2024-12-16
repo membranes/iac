@@ -16,6 +16,8 @@ Beware ([REF](https://docs.aws.amazon.com/batch/latest/userguide/launch-template
 > * *Disable API termination (AWS Batch must control instance lifecycle)*
 
 
+<br>
+
 Additionally:
 
 * [In-depth Tutorial](https://docs.aws.amazon.com/batch/latest/userguide/getting-started-ec2.html)
@@ -25,6 +27,8 @@ Additionally:
     * [Batch, GPU (Graphics Processing Unit), AMI (Amazon Machine Image) ](https://docs.aws.amazon.com/batch/latest/userguide/batch-gpu-ami.html)
 * [ECS & GPU (Graphics Processing Unit) Workloads](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-gpu.html)
 
+
+<br>
 
 Batch job definition in relation to [docker run](https://docs.docker.com/reference/cli/docker/container/run/).  Review [shared memory size](https://docs.docker.com/reference/cli/docker/buildx/build/#shm-size), i.e., `--shm-size.`
 
@@ -67,6 +71,21 @@ Including, [Run a Job (.sync)](https://docs.aws.amazon.com/step-functions/latest
 ### IPv6 & IPv4
 
 > "The Amazon ECS GPU-optimized AMI has IPv6 enabled, which causes issues when using yum. This can be resolved by configuring yum to use IPv4 with the following command. ([REF](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-gpu.html))
+
+
+<br>
+<br>
+
+
+## References
+
+* [Amazon ECS container agent configuration](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-agent-config.html)
+* [Installing the Amazon ECS container agent on a non-Amazon Linux EC2 instance](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-agent-install.html)
+* [Amazon ECS Container Agent](https://github.com/aws/amazon-ecs-agent/blob/master/README.md)
+* [Docker, GPU (Graphics Performance Unit), NVIDIA Environment Variables](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/docker-specialized.html)
+* [ECS, GPU](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-gpu.html)
+* [Step Functions & ECS](https://docs.aws.amazon.com/step-functions/latest/dg/connect-ecs.html)
+
 
 
 <br>
