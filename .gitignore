@@ -53,5 +53,6 @@ script.sh
 
 *-private*
 *-mime
+*-mime-text
 data.sh
 *.py
