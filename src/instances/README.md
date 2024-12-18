@@ -147,12 +147,15 @@ The team registers images via GitHub Container Registry & Amazon Web Services' E
 
 ```bash
 docker pull ghcr.io/{org}/{repository}:{branch}
-docker run --rm --gpus all --shm-size=16gb -e AWS_DEFAULT_REGION={region.code} 
-     ghcr.io/{org}/{repository}:{branch} src/main.py --architecture bert
+docker run --rm --gpus all --shm-size=27gb -e AWS_DEFAULT_REGION={region.code} 
+     ghcr.io/{org}/{repository}:{branch}
 ```
 
+e.g.
+
 ```bash
-docker run --gpus all --shm-size=15gb -p 6007:6007 -p 6006:6006 -p 8265:8265 -p 6379:6379 -e AWS_DEFAULT_REGION={region.code} ghcr.io/membranes/text:master src/main.py --architecture bert
+docker pull ghcr.io/membranes/text:master
+docker run --gpus all --shm-size=27gb -p 6007:6007 -p 6006:6006 -p 8265:8265 -p 6379:6379 -e AWS_DEFAULT_REGION={region.code} ghcr.io/membranes/text:master src/main.py --architecture bert
 ```
 
 <br>
