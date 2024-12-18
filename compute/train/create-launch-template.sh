@@ -2,10 +2,9 @@
 
 : << 'comment'
 This script creates the launch template of a training phase
-    * $1: The letter code/representation of a model.
-    * $2: An Amazon region code.
+    * $1: An Amazon region code.
 comment
 
-path=file://compute/train/model
+path=file://compute/train
 
-aws ec2 create-launch-template --cli-input-json "$path/$1/define.json" --region $2
+aws ec2 create-launch-template --cli-input-json "$path/define.json" --region $1
