@@ -143,7 +143,7 @@ rm -f .ssh/known_hosts
 
 ## GitHub Packages
 
-Example:
+The team registers images via GitHub Container Registry & Amazon Web Services' Elastic Container Registry (ECR); the GitHub image is the backup.  Usually, if the image's size is greater than a gigabyte ECR image registration is skipped, hence we need the GitUb image for operations.  This is straightforward within Amazon's compute resources:  
 
 ```bash
 docker pull ghcr.io/{org}/{repository}:{branch}
