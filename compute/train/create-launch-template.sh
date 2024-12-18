@@ -1,7 +1,7 @@
 #!/bin/bash
 
 : << 'comment'
-This script creates the launch template of a training phase
+This script creates a launch template for model development
     * $1: An Amazon region code.
 comment
 
