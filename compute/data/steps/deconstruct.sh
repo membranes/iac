@@ -8,7 +8,7 @@ comment
 tau=2s
 
 # Path
-path=file://src/data
+path=file://compute/data
 
 # Delete Machine
 aws stepfunctions delete-state-machine --cli-input-json $path/steps/delete.json
