@@ -4,6 +4,6 @@
 This script starts the execution of a state machine via its Amazon Resource Name (ARN).
 comment
 
-path=file://src
+path=file://compute/data/steps
 
-aws stepfunctions start-execution --cli-input-json $path/steps/data/execute.json
+aws stepfunctions start-execution --cli-input-json $path/execute.json
