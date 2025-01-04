@@ -8,15 +8,14 @@ comment
 tau=2s
 
 # Path
-path=file://compute/data
+path=file://compute/numerics
 
 # Delete Machine
 aws stepfunctions delete-state-machine --cli-input-json $path/steps/delete.json
 sleep $tau
 
 # De-register Task Definition/s
-aws ecs deregister-task-definition --cli-input-json $path/ecs/tasks/acquire/deregister.json
-aws ecs deregister-task-definition --cli-input-json $path/ecs/tasks/prepare/deregister.json
+aws ecs deregister-task-definition --cli-input-json $path/ecs/tasks/deregister.json
 sleep $tau
 
 # Delete Task Definition/s
@@ -24,5 +23,4 @@ aws ecs delete-task-definitions --cli-input-json $path/ecs/tasks/delete-data.jso
 sleep $tau
 
 # Delete Log Group
-aws logs delete-log-group --cli-input-json $path/ecs/logs/acquire/delete.json
-aws logs delete-log-group --cli-input-json $path/ecs/logs/prepare/delete.json
+aws logs delete-log-group --cli-input-json $path/ecs/logs/delete.json
